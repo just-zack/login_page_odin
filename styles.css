@@ -1,17 +1,17 @@
 * {
     --main-font: 'Righteous';
-    --main-color: ;
-    --secondary-color: ;
-
+    --main-color:  #F4B20E;
+    --secondary-color: black;
 }
-font-family: 'Righteous', cursive;
 
 body {
     display: flex;
-    background-image: url(/source/4.png);
     position: relative;
-    height: 100vh;
-
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
 }
 
 #container {
@@ -19,14 +19,25 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: pink;
+    background-color: var(--main-color);
     width: 100vw;
     height: 75vh;
     display: flex;
 }
 #image_block {
     background-image: url('/source/4.png');
-    width: 500px;
+    width: 600px;
+    position: relative;
+}
+
+#transparent_block {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 20%;
+    opacity: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
@@ -38,6 +49,22 @@ label {
 }
 
 .logo {
-    max-height: 60px;
-    max-width: auto;
+    max-height: 120px;
+    margin: 5px;
+}
+
+#form_panel {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#spacer {
+    height: 20%;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
 }
