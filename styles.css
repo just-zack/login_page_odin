@@ -1,1 +1,43 @@
+* {
+    --main-font: 'Righteous';
+    --main-color: ;
+    --secondary-color: ;
+
+}
 font-family: 'Righteous', cursive;
+
+body {
+    display: flex;
+    background-image: url(/source/4.png);
+    position: relative;
+    height: 100vh;
+
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: pink;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+}
+#image_block {
+    background-image: url('/source/4.png');
+    width: 500px;
+}
+
+.text {
+    font-family: var(--main-font, sans-serif);
+}
+
+label {
+    font-family: var(--main-font, sans-serif);
+}
+
+.logo {
+    max-height: 60px;
+    max-width: auto;
+}

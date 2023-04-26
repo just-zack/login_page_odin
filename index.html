@@ -11,30 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
-        <div id="image_block">
-            <div id="transparent_block">
-                <img src="source/logo.png"/>
-            </div>
-        </div>
-        <div id="form_panel">
-            <h1 id="strapline">Aloha lets talk.</h1>
-            <p id="subheading">some text</p>
-            <div id="form_container">
-                <div id="form_left">
-                    <form>
-                        
-                    </form>
-                </div>
-                <div id="form_right">
-                    <form>
-                        
-                    </form>
+    <div id="background">
+        <div id="container">
+            <div id="image_block">
+                <div id="transparent_block">
+                    <img class="logo" src="source/logo.png"/>
                 </div>
             </div>
-            <div id="submit_panel">
-                <button type="submit">Create Account</button>
-                <p id="existing_account">Already have an account? <a id="log_in" href="">Log in</a></p>
+            <div id="form_panel">
+                <h1 id="strapline" class="text">Aloha lets talk.</h1>
+                <p id="subheading" class="text">some text</p>
+                <div id="form_container">
+                    <div id="form">
+                        <form>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="tex" id="last_name" name="last_name">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" id="number" name="phone">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="pwd">
+                        <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_pwd" name="confirm_pwd">
+                        </form>
+                    </div>
+                </div>
+                <div id="submit_panel">
+                    <button type="submit">Create Account</button>
+                    <p id="existing_account">Already have an account? <a id="log_in" href="">Log in</a></p>
+                </div>
             </div>
         </div>
     </div>
