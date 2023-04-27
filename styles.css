@@ -47,7 +47,7 @@ body {
 #transparent_block {
     background-color: var(--secondary-color);
     position: absolute;
-    top: 40%;
+    top: 31%;
     opacity: 30%;
     width: 100%;
     height: 20%;
@@ -61,10 +61,10 @@ body {
 }
 
 .logo {
-    max-height: 180px;
+    max-height: 250px;
     padding: 10px;
     position: absolute;
-    top: 37%;
+    top: 23%;
     right: 20%;
 }
 
