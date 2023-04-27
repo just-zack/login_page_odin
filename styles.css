@@ -2,6 +2,20 @@
     --main-font: 'Righteous';
     --main-color:  #F4B20E;
     --secondary-color: black;
+    --padding-standard: 50px;
+}
+
+button,
+label,
+input,
+select,
+progress,
+meter {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,7 +35,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: var(--main-color);
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     display: flex;
 }
 #image_block {
@@ -42,29 +56,71 @@ body {
 
 .text {
     font-family: var(--main-font, sans-serif);
-}
-
-label {
-    font-family: var(--main-font, sans-serif);
+    margin: 0;
+    padding-left: var(--padding-standard);
+    padding-right: var(--padding-standard);
 }
 
 .logo {
-    max-height: 120px;
-    margin: 5px;
+    max-height: 150px;
+    padding: 10px;
 }
 
 #form_panel {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 0;
+}
+
+#form_container {
+    background-color: var(--secondary-color) ;
+    padding: var(--padding-standard);
+    opacity: 90%;
+
+}
+
+.form_item {
+    flex: auto;
+    display: flex;
+    display: inline-block;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+label {
+    font-family: sans-serif;
+    color: var(--main-color);
+    display: flex;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    flex: auto;
 }
 
 #spacer {
     height: 20%;
 }
 
-h1 {
+#strapline {
     font-size: 4rem;
-    margin: 0;
-    padding: 0;
+}
+
+#subheading {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#form {
+    display: inline-block;
+}
+
+input {
+    width: 35vw;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    border: solid var(--main-color) 1px;
+    color: var(--main-color);
+    flex: auto;
 }
