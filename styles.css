@@ -40,18 +40,17 @@ body {
 }
 #image_block {
     background-image: url('/source/4.png');
-    width: 600px;
+    width: 80%;
     position: relative;
 }
 
 #transparent_block {
     background-color: var(--secondary-color);
     position: absolute;
-    top: 20%;
-    opacity: 50%;
+    top: 40%;
+    opacity: 30%;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    height: 20%;
 }
 
 .text {
@@ -62,20 +61,25 @@ body {
 }
 
 .logo {
-    max-height: 150px;
+    max-height: 180px;
     padding: 10px;
+    position: absolute;
+    top: 37%;
+    right: 20%;
 }
 
 #form_panel {
     display: flex;
     flex-direction: column;
     margin: 0;
+
 }
 
 #form_container {
     background-color: var(--secondary-color) ;
     padding: var(--padding-standard);
     opacity: 90%;
+    
 
 }
 
@@ -97,15 +101,15 @@ label {
 }
 
 #spacer {
-    height: 20%;
+    height: 10%;
 }
 
 #strapline {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4rem, 5rem) ;
 }
 
 #subheading {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem); 
     margin-bottom: 30px;
 }
 
@@ -114,7 +118,7 @@ label {
 }
 
 input {
-    width: 35vw;
+    width: clamp(100px, 20vw, 500px); ;
     padding: 5px;
     font-size: 1.2rem;
     font-family: var(--main-font);
@@ -123,4 +127,24 @@ input {
     border: solid var(--main-color) 1px;
     color: var(--main-color);
     flex: auto;
+}
+
+#submit {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10px;
+    font-family: var(--main-font);
+    margin-left: var(--padding-standard);
+    margin-top: 30px;
+    opacity: 90%;
+    border: solid var(--secondary-color) 2px;
+}
+
+#existing_account {
+    margin-left: var(--padding-standard);
+    font-family: var(--main-font);
+    font-size: 1rem;
 }

@@ -13,9 +13,8 @@
     <div id="background">
         <div id="container">
             <div id="image_block">
-                <div id="transparent_block">
-                    <img class="logo" src="source/A (1280 × 500 px).png"/>
-                </div>
+                <div id="transparent_block"></div>
+                <img class="logo" src="source/A (1280 × 500 px).png"/>
             </div>
             <div id="form_panel">
                 <div id="spacer"></div>
@@ -26,15 +25,15 @@
                         <form action="" method="">
                             <div class="form_item">
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" name="first_name">
+                                <input type="text" id="first_name" name="first_name" required>
                             </div>
                             <div class="form_item">
                                 <label for="last_name">LAST NAME</label>
-                                <input type="tex" id="last_name" name="last_name">
+                                <input type="tex" id="last_name" name="last_name" required>
                             </div>
                             <div class="form_item">
                                 <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="form_item">
                                 <label for="number">PHONE NUMBER</label>
@@ -42,17 +41,17 @@
                             </div>
                             <div class="form_item">
                                 <label for="pwd">PASSWORD</label>
-                                <input type="password" id="pwd" name="pwd">
+                                <input type="password" id="pwd" name="pwd" required>
                             </div>
                             <div class="form_item">
                                 <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm_pwd" name="confirm_pwd">
+                                <input type="password" id="confirm_pwd" name="confirm_pwd" required>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div id="submit_panel">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="submit">Create Account</button>
                     <p id="existing_account">Already have an account? <a id="log_in" href="">Log in</a></p>
                 </div>
             </div>
