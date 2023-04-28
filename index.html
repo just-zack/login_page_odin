@@ -16,45 +16,44 @@
                 <div id="transparent_block"></div>
                 <img class="logo" src="source/A (1280 × 500 px).png"/>
             </div>
-            <div id="form_panel">
-                <div id="spacer"></div>
-                <h1 id="strapline" class="text">Aloha lets talk.</h1>
-                <p id="subheading" class="text">All it takes is a conversation to realize we're not so different after all. Join us in the movement to make listening the norm.</p>
-                <div id="form_container">
-                    <div id="form">
-                        <form action="" method="">
-                            <div class="form_item">
-                                <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" name="first_name" required>
-                            </div>
-                            <div class="form_item">
-                                <label for="last_name">LAST NAME</label>
-                                <input type="tex" id="last_name" name="last_name" required>
-                            </div>
-                            <div class="form_item">
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <div class="form_item">
-                                <label for="number">PHONE NUMBER</label>
-                                <input type="tel" id="number" name="phone">
-                            </div>
-                            <div class="form_item">
-                                <label for="pwd">PASSWORD</label>
-                                <input type="password" id="pwd" name="pwd" required>
-                            </div>
-                            <div class="form_item">
-                                <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm_pwd" name="confirm_pwd" required>
-                            </div>
-                        </form>
+            <form action="" method="">
+                <div id="form_panel">
+                    <h1 id="strapline" class="text">Aloha lets talk.</h1>
+                    <p id="subheading" class="text">All it takes is a conversation to realize we're not so different after all. Join us in the movement to make listening the norm.</p>
+                    <div id="form_container">
+                        <div id="form">
+                                <div class="form_item">
+                                    <label for="first_name" aria-placeholder="Josh">FIRST NAME*</label>
+                                    <input type="text" id="first_name" name="first_name" required />
+                                </div>
+                                <div class="form_item">
+                                    <label for="last_name">LAST NAME*</label>
+                                    <input type="tex" id="last_name" name="last_name" required />
+                                </div>
+                                <div class="form_item">
+                                    <label for="email">EMAIL*</label>
+                                    <input type="email" name="email" id="email" required />
+                                </div>
+                                <div class="form_item">
+                                    <label for="number">PHONE NUMBER</label>
+                                    <input type="tel" id="number" name="phone" />
+                                </div>
+                                <div class="form_item">
+                                    <label for="pwd">PASSWORD*</label>
+                                    <input type="password" id="pwd" name="pwd" required />
+                                </div>
+                                <div class="form_item">
+                                    <label for="confirm_pwd">CONFIRM PASSWORD*</label>
+                                    <input type="password" id="confirm_pwd" name="confirm_pwd" required />
+                                </div>
+                        </div>
+                    </div>
+                    <div id="submit_panel">
+                        <button type="submit" id="submit">Create Account</button>
+                        <p id="existing_account">Already have an account? <a id="log_in" href="">Log in</a></p>
                     </div>
                 </div>
-                <div id="submit_panel">
-                    <button type="submit" id="submit">Create Account</button>
-                    <p id="existing_account">Already have an account? <a id="log_in" href="">Log in</a></p>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
