@@ -39,7 +39,6 @@ body {
     display: flex;
 }
 #image_block {
-    background-image: url('/source/4.png');
     width: 80%;
     position: relative;
 }
